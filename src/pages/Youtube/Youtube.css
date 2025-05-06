@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5px;
+}
+.youtubebody{
+    /* background-color: antiquewhite; */
+    height: 100vh;
+}
+.barline{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(87, 87, 87);
+    display: block;
+    border-radius: 10px;
+    margin: 3px;
+}
+.bar{
+    width: 39px;
+    height: 10px;
+    background-color: red;
+}
+.youtubelogo{
+    background-image: url();
+}
+#ytl{
+    height: 38px;
+    width: 50px;
+    margin: 0px;
+    margin-left: 40px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+#YTNG{
+    margin-left: 90px;
+    margin-top: -55px;
+}
+#YTNG p{
+    background-color: red;
+}

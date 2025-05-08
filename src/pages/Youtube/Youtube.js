@@ -5,7 +5,7 @@ import Accordion from "../../components/accordion/Accordion";
 import { accordionData } from "../../data/accordionMockData";
 
 function Youtube() {
-  const [openedIndex, setopenedIndex] = useState(3)
+  const [openedIndex, setOpenedIndex] = useState(3)
   return (
     <div className="youtubebody">
       <div className="sidebar">
@@ -29,7 +29,7 @@ function Youtube() {
         {
           accordionData.map((data, id)=>(
 
-              <Accordion question={data.question} answer={data.answer} currentIndex={openedIndex} key={data.id} id={data.id}/>
+              <Accordion question={data.question} answer={data.answer} setIndex={setOpenedIndex} currentIndex={openedIndex} key={data.id} id={data.id}/>
           ))
         }
       </div>

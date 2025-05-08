@@ -4,12 +4,13 @@ import addIcon from "../../images/plus.png";
 import minusIcon from "../../images/minus.png";
 
 const Accordion = (props) => {
-  const [isOpened, setIsOpened] = useState(false);
+  // const [isOpened, setIsOpened] = useState(false);
+  const isOpened = String(props.currentIndex) === props.id
   return (
     <div className="item">
       <div className="question-header">
-        <p className="question">{props.question}</p>
-        <div className="add-icon" onClick={() => setIsOpened(!isOpened)}>
+        <p className="question">{props.id}. {props.question}</p>
+        <div className="add-icon" onClick={()=>{}}>
           {isOpened ? <img src={minusIcon} /> : <img src={addIcon} />}
         </div>
       </div>

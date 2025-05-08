@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Youtube.css";
 import YTLogo from "../../images/youtube_logo-removebg-preview.png";
 import Accordion from "../../components/accordion/Accordion";
 import { accordionData } from "../../data/accordionMockData";
 
 function Youtube() {
+  const [openedIndex, setopenedIndex] = useState(3)
   return (
     <div className="youtubebody">
       <div className="sidebar">
@@ -28,7 +29,7 @@ function Youtube() {
         {
           accordionData.map((data, id)=>(
 
-              <Accordion question={data.question} answer={data.answer} />
+              <Accordion question={data.question} answer={data.answer} currentIndex={openedIndex} key={data.id} id={data.id}/>
           ))
         }
       </div>

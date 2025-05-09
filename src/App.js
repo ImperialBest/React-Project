@@ -6,6 +6,7 @@ import Login from './pages/Login/Login.js';
 import SignUp from './pages/SignUp/SignUp.js';
 import Youtube from './pages/Youtube/Youtube.js';
 import Accordion from './components/accordion/Accordion';
+import Accordion2 from './components/Accordion2/Accordion2'
 function App() {
   return (
     <div>
@@ -16,7 +17,8 @@ function App() {
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/signup' element={<Login/>}></Route>
           <Route path='/signup' element={<SignUp/>}></Route>
-          <Route path='/a' element={<Accordion/>}></Route>
+          <Route path='/a' element={<Accordion/>}></Route>          
+          <Route path='/a' element={<Accordion2/>}></Route>          
         </Routes>
       </Router>
     </div>

@@ -1,0 +1,28 @@
+.Item{
+    border: 3px solid black;
+    border-radius: 15px;
+    height: fit-content;
+    width: auto;
+    margin: 50px;
+    padding: 5vcxpx;
+    & #hr2{
+        background-color: black;
+        height: 4px;
+    }
+        & .question{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer;
+    }
+    & .question-header{
+        flex-grow: 2;
+    }
+    & .addimg{
+        width: 20px;
+    }
+    & .addimg img{
+        width: 20px;
+    }
+
+}
